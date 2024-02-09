@@ -19,3 +19,5 @@ Project architeture:
 &ensp;&ensp;&ensp;&ensp;&ensp;│&ensp;&ensp;└── ulp_app.h\
 &ensp;&ensp;&ensp;&ensp;&ensp;├── app.c\
 &ensp;&ensp;&ensp;&ensp;&ensp;└── CMakeLists.txt
+
+More information about programming ULP RISC-V coprocessor [here](doc:https://www.microprogramador.com.br/2024/01/como-programar-o-ulp-risc-v-coprocessor.html) (portuguese).
