@@ -1,10 +1,11 @@
-#include "ulp_app.h"
 #include "ulp_riscv.h"
 #include "ulp_riscv_utils.h"
 #include "ulp_riscv_uart_ulp_core.h"
 #include "ulp_riscv_print.h"
+#include "string.h"
 
 volatile uint32_t var;
+volatile char var_string[5];
 
 static ulp_riscv_uart_t s_print_uart;
 #define CONFIG_EXAMPLE_UART_TXD 4
@@ -24,6 +25,11 @@ int main (void)
 
     if(var > 100) var = 0;
     else var++;
+
+    if(var%2 == 0)
+        strcpy(var_string, "even");
+    else
+        strcpy(var_string, "odd");
 
     if(var%20 == 0)
         ulp_riscv_wakeup_main_processor();

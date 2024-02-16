@@ -49,10 +49,12 @@ static void set_wakeup_source(void) {
 
 static void task_read(void *pvParameters)
 {
+    char* parity = (char*)&ulp_var_string;
     while (1)
     {
         ESP_LOGW(TAG_APP, "ULP variable value: %lu", ulp_var);
-        vTaskDelay(pdMS_TO_TICKS(2000));
+        ESP_LOGW(TAG_APP, "Parity: %s", parity);
+        vTaskDelay(pdMS_TO_TICKS(1000));
     }   
 }
 
