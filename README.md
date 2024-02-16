@@ -15,8 +15,7 @@ Project architeture:
 &ensp;&ensp;&ensp;&ensp;&ensp;├── include\
 &ensp;&ensp;&ensp;&ensp;&ensp;│&ensp;&ensp;└── app.h\
 &ensp;&ensp;&ensp;&ensp;&ensp;├── ulp\
-&ensp;&ensp;&ensp;&ensp;&ensp;│&ensp;&ensp;├── ulp_app.c\
-&ensp;&ensp;&ensp;&ensp;&ensp;│&ensp;&ensp;└── ulp_app.h\
+&ensp;&ensp;&ensp;&ensp;&ensp;│&ensp;&ensp;└── ulp_app.c\
 &ensp;&ensp;&ensp;&ensp;&ensp;├── app.c\
 &ensp;&ensp;&ensp;&ensp;&ensp;└── CMakeLists.txt
 
